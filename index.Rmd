@@ -19,15 +19,23 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Recursos de interés
-* Repositorios en GitHub del Atlas de Servicios Ecosistémicos de la GAM: [https://github.com/atlas-servicios-ecosistemicos-gam](https://github.com/atlas-servicios-ecosistemicos-gam).
-* Sitio web del lenguaje de programación R: [The R Project for Statistical Computing](https://www.r-project.org/).
-* Sitio web del entorno de desarrollo RStudio: [RStudio | Open source & professional software for data science teams](https://rstudio.com/).
+* Repositorios en GitHub del Atlas de Servicios Ecosistémicos de la GAM: [https://github.com/atlas-servicios-ecosistemicos-gam](https://github.com/atlas-servicios-ecosistemicos-gam)
 
-* Sitio web del paquete Flexdashboard de R: [Flexdashboard: Easy interactive dashboards for R](https://rmarkdown.rstudio.com/flexdashboard/).
-* Sitio web del paquete Leaflet para R: [Leaflet for R](https://rstudio.github.io/leaflet/).
-* Sitio web del paquete Plotly para R: [Plotly R Open Source Graphing Library](https://plotly.com/r/).
-* Sitio web del paquete DT para R: [DT: An R interface to the DataTables library](https://rstudio.github.io/DT/).
-* Libro "R Markdown: The Definitive Guide", de Xie et al.: [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/).
+* Sitio web del lenguaje de programación R: [The R Project for Statistical Computing](https://www.r-project.org/)
+* Sitio web del entorno de desarrollo RStudio: [RStudio | Open source & professional software for data science teams](https://rstudio.com/)
+
+* Sitio web del paquete sf de R: [Simple Features for R - sf](https://r-spatial.github.io/sf/)
+* Sitio web del paquete raster de R: [Raster data manipulation - R](https://rspatial.org/raster/spatial/8-rastermanip.html)
+
+* Sitio web del paquete flexdashboard de R: [flexdashboard: Easy interactive dashboards for R](https://rmarkdown.rstudio.com/flexdashboard/)
+* Sitio web del paquete Leaflet para R: [Leaflet for R](https://rstudio.github.io/leaflet/)
+* Sitio web del paquete Plotly para R: [Plotly R Open Source Graphing Library](https://plotly.com/r/)
+* Sitio web del paquete DT para R: [DT: An R interface to the DataTables library](https://rstudio.github.io/DT/)
+* Sitio web del sistema Git para control de versiones: [Git](https://git-scm.com/)
+* Libro "Geocomputation with R", de Lovelace et al.: [Geocomputation with R](https://geocompr.robinlovelace.net/)
+* Libro "R Markdown: The Definitive Guide", de Xie et al.: [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+
 
 # Presentación
 Este documento contiene la documentación técnica del [Atlas de Servicios Ecosistémicos de la Gran Área Metropolitana (GAM)](https://github.com/atlas-servicios-ecosistemicos-gam). El objetivo de su elaboración es facilitar la instalación, modificación y mantenimiento del Atlas por parte de cualquier persona u organización interesada.
@@ -58,10 +66,42 @@ Las principales tecnologías relacionadas con el lenguaje R que se utilizan en l
 
 * La sintaxis [R Markdown](https://rmarkdown.rstudio.com/). Permite intercalar código fuente en R (y otros lenguajes de programación) con texto, gráficos, tablas, mapas y otros tipos de contenido. Los documentos R Markdown son completamente reproducibles y ampliamente usados en comunicación científica.
 
-* El paquete [Flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/) de R. Utiliza R Markdown para generar tableros de control (también llamados _cuadros de mando_) que integran diversas visualizaciones de conjuntos de datos tales como gráficos, tablas y mapas. Opcionalmente, puede utilizar el paquete [Shiny](https://shiny.rstudio.com/) para brindar mayor interactividad.
+* El paquete [sf](https://r-spatial.github.io/sf/) de R. Ofrece un conjunto de funciones para el manejo de datos vectoriales, de acuerdo con el estándar [Simple Features](https://www.ogc.org/standards/sfa).
 
-* El paquete [Leaflet para R](https://rstudio.github.io/leaflet/). Es una implementación en R de la biblioteca [Leaflet para el lenguaje JavaScript](https://leafletjs.com/) para la programación de mapas interactivos en páginas web. Los mapas de Leaflet pueden incluirse en documentos R Markdown y en aplicaciones de Flexdashboard y Shiny.
+* El paquete [raster](https://rspatial.org/raster/spatial/8-rastermanip.html) de R. Ofrece un conjunto de funciones para el manejo de datos raster.
+
+* El paquete [flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/) de R. Utiliza R Markdown para generar tableros de control (también llamados _cuadros de mando_) que integran diversas visualizaciones de conjuntos de datos tales como gráficos, tablas y mapas. Opcionalmente, puede utilizar el paquete [Shiny](https://shiny.rstudio.com/) para brindar mayor interactividad.
+
+* El paquete [Leaflet para R](https://rstudio.github.io/leaflet/). Es una implementación en R de la biblioteca [Leaflet para el lenguaje JavaScript](https://leafletjs.com/) para la programación de mapas interactivos en páginas web. Los mapas de Leaflet pueden incluirse en documentos R Markdown y en aplicaciones de flexdashboard y Shiny.
 
 * El paquete [Plotly para R](https://plotly.com/r/). Es una biblioteca para gráficos interactivos para la web, basada en la biblioteca [plotly.js](https://github.com/plotly/plotly.js) de JavaScript.
 
 * El paquete [DT para R](https://rstudio.github.io/DT/). Proporciona una interfaz en R para la biblioteca [DataTables](http://datatables.net/) en JavaScript. A través de DT, los objetos de datos de R (ej. _data frames_) pueden ser desplegados como tablas en páginas web, con capacidades de filtrado, paginación y ordenación, entre otras.
+
+* El sistema [Git](https://git-scm.com/) para control de versiones. Facilita el mantenimiento de versiones de software y de contenidos de varios tipos (ej. libros, documentación en general). Puede utilizarse a través de líneas de comandos y de interfaces gráficas. Git es el sistema en el cual está basado el sitio [GitHub](https://github.com/), para alojamiento de proyectos de software, y otros similares (ej. [GitLab](https://gitlab.com/), [Bitbucket](https://bitbucket.org/)).
+
+# Instalación de herramientas
+Para el mantenimiento del Atlas, se recomienda la instalación de las siguientes herramientas de software:
+
+1. R y RStudio. Puede seguir la guía disponible en [(Tutorial) How to Install R on Windows, Mac OS X, and Ubuntu - DataCamp](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu/).
+2. Git. El instalador está disponible en [Git - Downloads](https://git-scm.com/download/).
+3. Paquetes de R. Ejecute los siguientes comandos en la consola de R en RStudio:
+```{r eval = FALSE}
+# Instalación de paquetes
+install.packages("sf")
+install.packages("raster")
+install.packages("flexdashboard")
+install.packages("leaflet")
+install.packages("plotly")
+install.packages("DT")
+```
+4. Cree una cuenta gratuita en [GitHub](https://github.com/).
+
+# Bifurcación, clonación y modificación de un repositorio
+1. Bifurque a su cuenta en GitHub el repositorio [https://github.com/atlas-servicios-ecosistemicos-gam/atlas-servicios-ecosistemicos-gam.github.io](https://github.com/atlas-servicios-ecosistemicos-gam/atlas-servicios-ecosistemicos-gam.github.io).
+2. En el apartado _Settings_ del repositorio bifurcado a su cuenta, busque la sección _GitHub Pages_ y habilítela al seleccionar _master branch_ como fuente. Tome nota de la dirección web resultante (ej. https://usuario.github.io/atlas-servicios-ecosistemicos-gam.github.io/).
+3. En RStudio, clone el repositorio de su cuenta personal con la opción de menú _File - New Project - Version Control - Git_. En _Repository URL_ escriba la dirección de su repositorio (ej. https://github.com/usuario/atlas-servicios-ecosistemicos-gam.github.io.git). Puede obtener esta dirección con el botón _Clone or download_, en la página principal del mismo repositorio.
+4. Abra y modifique el documento en R Studio.
+5. Cada vez que desee actualizar su documento en GitHub y GitHub Pages:
+- Presione el botón _Knit_ en RStudio para generar el documento correspondiente en la sintaxis HTML.
+- Suba a su repositorio en GitHub, los archivos _index.Rmd_ e _index.html_.

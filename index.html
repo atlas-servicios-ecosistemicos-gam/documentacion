@@ -1538,14 +1538,18 @@ div.tocify {
 <div id="recursos-de-interés" class="section level1">
 <h1>Recursos de interés</h1>
 <ul>
-<li><p>Repositorios en GitHub del Atlas de Servicios Ecosistémicos de la GAM: <a href="https://github.com/atlas-servicios-ecosistemicos-gam">https://github.com/atlas-servicios-ecosistemicos-gam</a>.</p></li>
-<li><p>Sitio web del lenguaje de programación R: <a href="https://www.r-project.org/">The R Project for Statistical Computing</a>.</p></li>
-<li><p>Sitio web del entorno de desarrollo RStudio: <a href="https://rstudio.com/">RStudio | Open source &amp; professional software for data science teams</a>.</p></li>
-<li><p>Sitio web del paquete Flexdashboard de R: <a href="https://rmarkdown.rstudio.com/flexdashboard/">Flexdashboard: Easy interactive dashboards for R</a>.</p></li>
-<li><p>Sitio web del paquete Leaflet para R: <a href="https://rstudio.github.io/leaflet/">Leaflet for R</a>.</p></li>
-<li><p>Sitio web del paquete Plotly para R: <a href="https://plotly.com/r/">Plotly R Open Source Graphing Library</a>.</p></li>
-<li><p>Sitio web del paquete DT para R: <a href="https://rstudio.github.io/DT/">DT: An R interface to the DataTables library</a>.</p></li>
-<li><p>Libro “R Markdown: The Definitive Guide”, de Xie et al.: <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a>.</p></li>
+<li><p>Repositorios en GitHub del Atlas de Servicios Ecosistémicos de la GAM: <a href="https://github.com/atlas-servicios-ecosistemicos-gam">https://github.com/atlas-servicios-ecosistemicos-gam</a></p></li>
+<li><p>Sitio web del lenguaje de programación R: <a href="https://www.r-project.org/">The R Project for Statistical Computing</a></p></li>
+<li><p>Sitio web del entorno de desarrollo RStudio: <a href="https://rstudio.com/">RStudio | Open source &amp; professional software for data science teams</a></p></li>
+<li><p>Sitio web del paquete sf de R: <a href="https://r-spatial.github.io/sf/">Simple Features for R - sf</a></p></li>
+<li><p>Sitio web del paquete raster de R: <a href="https://rspatial.org/raster/spatial/8-rastermanip.html">Raster data manipulation - R</a></p></li>
+<li><p>Sitio web del paquete flexdashboard de R: <a href="https://rmarkdown.rstudio.com/flexdashboard/">flexdashboard: Easy interactive dashboards for R</a></p></li>
+<li><p>Sitio web del paquete Leaflet para R: <a href="https://rstudio.github.io/leaflet/">Leaflet for R</a></p></li>
+<li><p>Sitio web del paquete Plotly para R: <a href="https://plotly.com/r/">Plotly R Open Source Graphing Library</a></p></li>
+<li><p>Sitio web del paquete DT para R: <a href="https://rstudio.github.io/DT/">DT: An R interface to the DataTables library</a></p></li>
+<li><p>Sitio web del sistema Git para control de versiones: <a href="https://git-scm.com/">Git</a></p></li>
+<li><p>Libro “Geocomputation with R”, de Lovelace et al.: <a href="https://geocompr.robinlovelace.net/">Geocomputation with R</a></p></li>
+<li><p>Libro “R Markdown: The Definitive Guide”, de Xie et al.: <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a></p></li>
 </ul>
 </div>
 <div id="presentación" class="section level1">
@@ -1577,10 +1581,46 @@ div.tocify {
 <p>Las principales tecnologías relacionadas con el lenguaje R que se utilizan en la implementación del Atlas son:</p>
 <ul>
 <li><p>La sintaxis <a href="https://rmarkdown.rstudio.com/">R Markdown</a>. Permite intercalar código fuente en R (y otros lenguajes de programación) con texto, gráficos, tablas, mapas y otros tipos de contenido. Los documentos R Markdown son completamente reproducibles y ampliamente usados en comunicación científica.</p></li>
-<li><p>El paquete <a href="https://rmarkdown.rstudio.com/flexdashboard/">Flexdashboard</a> de R. Utiliza R Markdown para generar tableros de control (también llamados <em>cuadros de mando</em>) que integran diversas visualizaciones de conjuntos de datos tales como gráficos, tablas y mapas. Opcionalmente, puede utilizar el paquete <a href="https://shiny.rstudio.com/">Shiny</a> para brindar mayor interactividad.</p></li>
-<li><p>El paquete <a href="https://rstudio.github.io/leaflet/">Leaflet para R</a>. Es una implementación en R de la biblioteca <a href="https://leafletjs.com/">Leaflet para el lenguaje JavaScript</a> para la programación de mapas interactivos en páginas web. Los mapas de Leaflet pueden incluirse en documentos R Markdown y en aplicaciones de Flexdashboard y Shiny.</p></li>
+<li><p>El paquete <a href="https://r-spatial.github.io/sf/">sf</a> de R. Ofrece un conjunto de funciones para el manejo de datos vectoriales, de acuerdo con el estándar <a href="https://www.ogc.org/standards/sfa">Simple Features</a>.</p></li>
+<li><p>El paquete <a href="https://rspatial.org/raster/spatial/8-rastermanip.html">raster</a> de R. Ofrece un conjunto de funciones para el manejo de datos raster.</p></li>
+<li><p>El paquete <a href="https://rmarkdown.rstudio.com/flexdashboard/">flexdashboard</a> de R. Utiliza R Markdown para generar tableros de control (también llamados <em>cuadros de mando</em>) que integran diversas visualizaciones de conjuntos de datos tales como gráficos, tablas y mapas. Opcionalmente, puede utilizar el paquete <a href="https://shiny.rstudio.com/">Shiny</a> para brindar mayor interactividad.</p></li>
+<li><p>El paquete <a href="https://rstudio.github.io/leaflet/">Leaflet para R</a>. Es una implementación en R de la biblioteca <a href="https://leafletjs.com/">Leaflet para el lenguaje JavaScript</a> para la programación de mapas interactivos en páginas web. Los mapas de Leaflet pueden incluirse en documentos R Markdown y en aplicaciones de flexdashboard y Shiny.</p></li>
 <li><p>El paquete <a href="https://plotly.com/r/">Plotly para R</a>. Es una biblioteca para gráficos interactivos para la web, basada en la biblioteca <a href="https://github.com/plotly/plotly.js">plotly.js</a> de JavaScript.</p></li>
 <li><p>El paquete <a href="https://rstudio.github.io/DT/">DT para R</a>. Proporciona una interfaz en R para la biblioteca <a href="http://datatables.net/">DataTables</a> en JavaScript. A través de DT, los objetos de datos de R (ej. <em>data frames</em>) pueden ser desplegados como tablas en páginas web, con capacidades de filtrado, paginación y ordenación, entre otras.</p></li>
+<li><p>El sistema <a href="https://git-scm.com/">Git</a> para control de versiones. Facilita el mantenimiento de versiones de software y de contenidos de varios tipos (ej. libros, documentación en general). Puede utilizarse a través de líneas de comandos y de interfaces gráficas. Git es el sistema en el cual está basado el sitio <a href="https://github.com/">GitHub</a>, para alojamiento de proyectos de software, y otros similares (ej. <a href="https://gitlab.com/">GitLab</a>, <a href="https://bitbucket.org/">Bitbucket</a>).</p></li>
+</ul>
+</div>
+<div id="instalación-de-herramientas" class="section level1">
+<h1>Instalación de herramientas</h1>
+<p>Para el mantenimiento del Atlas, se recomienda la instalación de las siguientes herramientas de software:</p>
+<ol style="list-style-type: decimal">
+<li>R y RStudio. Puede seguir la guía disponible en <a href="https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu/">(Tutorial) How to Install R on Windows, Mac OS X, and Ubuntu - DataCamp</a>.</li>
+<li>Git. El instalador está disponible en <a href="https://git-scm.com/download/">Git - Downloads</a>.</li>
+<li>Paquetes de R. Ejecute los siguientes comandos en la consola de R en RStudio:</li>
+</ol>
+<pre class="r"><code># Instalación de paquetes
+install.packages(&quot;sf&quot;)
+install.packages(&quot;raster&quot;)
+install.packages(&quot;flexdashboard&quot;)
+install.packages(&quot;leaflet&quot;)
+install.packages(&quot;plotly&quot;)
+install.packages(&quot;DT&quot;)</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Cree una cuenta gratuita en <a href="https://github.com/">GitHub</a>.</li>
+</ol>
+</div>
+<div id="bifurcación-clonación-y-modificación-de-un-repositorio" class="section level1">
+<h1>Bifurcación, clonación y modificación de un repositorio</h1>
+<ol style="list-style-type: decimal">
+<li>Bifurque a su cuenta en GitHub el repositorio <a href="https://github.com/atlas-servicios-ecosistemicos-gam/atlas-servicios-ecosistemicos-gam.github.io">https://github.com/atlas-servicios-ecosistemicos-gam/atlas-servicios-ecosistemicos-gam.github.io</a>.</li>
+<li>En el apartado <em>Settings</em> del repositorio bifurcado a su cuenta, busque la sección <em>GitHub Pages</em> y habilítela al seleccionar <em>master branch</em> como fuente. Tome nota de la dirección web resultante (ej. <a href="https://usuario.github.io/atlas-servicios-ecosistemicos-gam.github.io/" class="uri">https://usuario.github.io/atlas-servicios-ecosistemicos-gam.github.io/</a>).</li>
+<li>En RStudio, clone el repositorio de su cuenta personal con la opción de menú <em>File - New Project - Version Control - Git</em>. En <em>Repository URL</em> escriba la dirección de su repositorio (ej. <a href="https://github.com/usuario/atlas-servicios-ecosistemicos-gam.github.io.git" class="uri">https://github.com/usuario/atlas-servicios-ecosistemicos-gam.github.io.git</a>). Puede obtener esta dirección con el botón <em>Clone or download</em>, en la página principal del mismo repositorio.</li>
+<li>Abra y modifique el documento en R Studio.</li>
+<li>Cada vez que desee actualizar su documento en GitHub y GitHub Pages:</li>
+</ol>
+<ul>
+<li>Presione el botón <em>Knit</em> en RStudio para generar el documento correspondiente en la sintaxis HTML.</li>
+<li>Suba a su repositorio en GitHub, los archivos <em>index.Rmd</em> e <em>index.html</em>.</li>
 </ul>
 </div>
 
