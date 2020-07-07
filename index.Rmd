@@ -89,19 +89,26 @@ Para el mantenimiento del Atlas, se recomienda la instalación de las siguientes
 ```{r eval = FALSE}
 # Instalación de paquetes
 install.packages("sf")
-install.packages("raster")
 install.packages("flexdashboard")
 install.packages("leaflet")
-install.packages("plotly")
-install.packages("DT")
+install.packages("kableExtra")
+install.packages("dplyr")
+
+# Carga de paquetes
+library(sf)
+library(flexdashboard)
+library(leaflet)
+library(kableExtra)
+library(dplyr)
+library(knitr)
 ```
 4. Cree una cuenta gratuita en [GitHub](https://github.com/).
 
 # Bifurcación, clonación y modificación de un repositorio
-1. Bifurque a su cuenta en GitHub el repositorio [https://github.com/atlas-servicios-ecosistemicos-gam/atlas-servicios-ecosistemicos-gam.github.io](https://github.com/atlas-servicios-ecosistemicos-gam/atlas-servicios-ecosistemicos-gam.github.io).
-2. En el apartado _Settings_ del repositorio bifurcado a su cuenta, busque la sección _GitHub Pages_ y habilítela al seleccionar _master branch_ como fuente. Tome nota de la dirección web resultante (ej. https://usuario.github.io/atlas-servicios-ecosistemicos-gam.github.io/).
-3. En RStudio, clone el repositorio de su cuenta personal con la opción de menú _File - New Project - Version Control - Git_. En _Repository URL_ escriba la dirección de su repositorio (ej. https://github.com/usuario/atlas-servicios-ecosistemicos-gam.github.io.git). Puede obtener esta dirección con el botón _Clone or download_, en la página principal del mismo repositorio.
-4. Abra y modifique el documento en R Studio.
+1. Bifurque (_fork_) a su cuenta en GitHub el repositorio [https://github.com/mfvargas/dash-gam-bio-chordata](https://github.com/mfvargas/dash-gam-bio-chordata).
+2. En el apartado _Settings_ del repositorio bifurcado a su cuenta, busque la sección _GitHub Pages_ y habilítela al seleccionar _master branch_ como fuente. Tome nota de la dirección web resultante (ej. https://usuario.github.io/dash-gam-bio-chordata/).
+3. En RStudio, clone el repositorio de su cuenta personal con la opción de menú _File - New Project - Version Control - Git_. En _Repository URL_ escriba la dirección de su repositorio (ej. https://github.com/usuario/dash-gam-bio-chordata.git). Puede obtener esta dirección con el botón _Code_, en la página principal del mismo repositorio.
+4. Abra y modifique el documento en R Studio (sugerencia: cambie el título).
 5. Cada vez que desee actualizar su documento en GitHub y GitHub Pages:
 - Presione el botón _Knit_ en RStudio para generar el documento correspondiente en la sintaxis HTML.
 - Suba a su repositorio en GitHub, los archivos _index.Rmd_ e _index.html_.

@@ -1600,11 +1600,18 @@ div.tocify {
 </ol>
 <pre class="r"><code># Instalación de paquetes
 install.packages(&quot;sf&quot;)
-install.packages(&quot;raster&quot;)
 install.packages(&quot;flexdashboard&quot;)
 install.packages(&quot;leaflet&quot;)
-install.packages(&quot;plotly&quot;)
-install.packages(&quot;DT&quot;)</code></pre>
+install.packages(&quot;kableExtra&quot;)
+install.packages(&quot;dplyr&quot;)
+
+# Carga de paquetes
+library(sf)
+library(flexdashboard)
+library(leaflet)
+library(kableExtra)
+library(dplyr)
+library(knitr)</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Cree una cuenta gratuita en <a href="https://github.com/">GitHub</a>.</li>
 </ol>
@@ -1612,10 +1619,10 @@ install.packages(&quot;DT&quot;)</code></pre>
 <div id="bifurcación-clonación-y-modificación-de-un-repositorio" class="section level1">
 <h1>Bifurcación, clonación y modificación de un repositorio</h1>
 <ol style="list-style-type: decimal">
-<li>Bifurque a su cuenta en GitHub el repositorio <a href="https://github.com/atlas-servicios-ecosistemicos-gam/atlas-servicios-ecosistemicos-gam.github.io">https://github.com/atlas-servicios-ecosistemicos-gam/atlas-servicios-ecosistemicos-gam.github.io</a>.</li>
-<li>En el apartado <em>Settings</em> del repositorio bifurcado a su cuenta, busque la sección <em>GitHub Pages</em> y habilítela al seleccionar <em>master branch</em> como fuente. Tome nota de la dirección web resultante (ej. <a href="https://usuario.github.io/atlas-servicios-ecosistemicos-gam.github.io/" class="uri">https://usuario.github.io/atlas-servicios-ecosistemicos-gam.github.io/</a>).</li>
-<li>En RStudio, clone el repositorio de su cuenta personal con la opción de menú <em>File - New Project - Version Control - Git</em>. En <em>Repository URL</em> escriba la dirección de su repositorio (ej. <a href="https://github.com/usuario/atlas-servicios-ecosistemicos-gam.github.io.git" class="uri">https://github.com/usuario/atlas-servicios-ecosistemicos-gam.github.io.git</a>). Puede obtener esta dirección con el botón <em>Clone or download</em>, en la página principal del mismo repositorio.</li>
-<li>Abra y modifique el documento en R Studio.</li>
+<li>Bifurque (<em>fork</em>) a su cuenta en GitHub el repositorio <a href="https://github.com/mfvargas/dash-gam-bio-chordata">https://github.com/mfvargas/dash-gam-bio-chordata</a>.</li>
+<li>En el apartado <em>Settings</em> del repositorio bifurcado a su cuenta, busque la sección <em>GitHub Pages</em> y habilítela al seleccionar <em>master branch</em> como fuente. Tome nota de la dirección web resultante (ej. <a href="https://usuario.github.io/dash-gam-bio-chordata/" class="uri">https://usuario.github.io/dash-gam-bio-chordata/</a>).</li>
+<li>En RStudio, clone el repositorio de su cuenta personal con la opción de menú <em>File - New Project - Version Control - Git</em>. En <em>Repository URL</em> escriba la dirección de su repositorio (ej. <a href="https://github.com/usuario/dash-gam-bio-chordata.git" class="uri">https://github.com/usuario/dash-gam-bio-chordata.git</a>). Puede obtener esta dirección con el botón <em>Code</em>, en la página principal del mismo repositorio.</li>
+<li>Abra y modifique el documento en R Studio (sugerencia: cambie el título).</li>
 <li>Cada vez que desee actualizar su documento en GitHub y GitHub Pages:</li>
 </ol>
 <ul>
