@@ -1,0 +1,43 @@
+---
+title: "Atlas de servicios ecosistémicos de la GAM - instrucciones para su instalación y mantenimiento"
+author: "Manuel Vargas"
+date: "2020-07-07"
+output:
+  html_document:
+    theme: readable    
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false    
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Recursos de interés
+* Página oficial del paquete flexdashboard: [flexdashboard: R Markdown Format for Flexible Dashboards](https://cran.r-project.org/web/packages/flexdashboard/).
+* Documentación de flexdashboard: [flexdashboard: Easy interactive dashboards for R](https://rmarkdown.rstudio.com/flexdashboard/).
+* Capítulo 5 del libro "R Markdown: The Definitive Guide", de Xie et al.: [Chapter 5 Dashboards](https://bookdown.org/yihui/rmarkdown/dashboards.html).
+
+# Introducción
+Este documento contiene las instrucciones para la instalación y el mantenimiento del **Atlas de Servicios Ecosistémicos de la Gran Área Metropolitana (GAM)**, el cual está siendo implementado como un portal web para la visualización y el análisis de datos geoespaciales. Este portal fue desarrollado en el contexto del proyecto [Biodiver_City](http://biocorredores.org/biodiver-city-sanjose/), el cual tiene como objetivo que las instituciones públicas (MINAE, SINAC, administraciones municipales) y actores claves privados (sector privado, organizaciones no gubernamentales, iniciativas urbanas) incorporen los servicios ecosistémicos urbanos, el establecimiento y la gestión de corredores biológicos interurbanos en su planificación de desarrollo urbano. El proyecto acompañará de cerca a los corredores biológicos interurbanos (CBI) María Aguilar y Río Torres. El desarrollo del Atlas es parte de la actividad “Análisis de los servicios ecosistémicos de los espacios verdes en la Gran Área Metropolitana (GAM) de Costa Rica”, ejecutada por el Centro Agronómico Tropical de Investigación y Enseñanza (Catie).
+
+El Atlas es un sitio web que presenta los datos relacionados con diferentes indicadores de servicios ecosistémicos de la GAM, entre los que pueden mencionarse:
+
+* Uso del suelo.
+* Zonas urbanas.
+* Cobertura de vegetación.
+* Superficie de tierra cultivada.
+* Superficie de pastos.
+* Superficie verde.
+* Islas de calor.
+* Biodiversidad.
+* Áreas silvestres protegidas.
+* Energía hidroeléctrica.
+* Conectividad ecológica.
+
+Los indicadores pueden presentarse a nivel de toda la GAM, de CBI o de cantón.
